@@ -5,11 +5,14 @@
   "scripts": {
     "develop": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
     "next": "^8.0.1",
     "react": "^16.8.1",
-    "react-dom": "^16.8.1"
+    "react-dom": "^16.8.1",
+    "styled-components": "^4.1.3"
   }
 }
