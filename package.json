@@ -9,10 +9,14 @@
     "export": "next export"
   },
   "dependencies": {
+    "@mdx-js/loader": "^0.17.0",
     "babel-plugin-styled-components": "^1.10.0",
     "next": "^8.0.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
+    "remark-emoji": "^2.0.2",
+    "remark-images": "^0.17.0",
+    "remark-slug": "^5.1.1",
     "styled-components": "^4.1.3"
   }
 }
