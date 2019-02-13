@@ -4,12 +4,15 @@
   "license": "MIT",
   "scripts": {
     "develop": "next",
-    "build": "next build",
-    "start": "next start"
+    "build": "NODE_ENV=production next build",
+    "start": "NODE_ENV=production next start",
+    "export": "next export"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
     "next": "^8.0.1",
     "react": "^16.8.1",
-    "react-dom": "^16.8.1"
+    "react-dom": "^16.8.1",
+    "styled-components": "^4.1.3"
   }
 }
