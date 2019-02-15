@@ -1,5 +1,6 @@
 import Header from './header'
 import styled from 'styled-components'
+import GlobalStyle from './global-style'
 
 const Wrapper = styled.div`
   margin: auto;
@@ -8,6 +9,7 @@ const Wrapper = styled.div`
 
 const Layout = ({ children }) => (
   <Wrapper>
+    <GlobalStyle />
     <Header />
     {children}
   </Wrapper>

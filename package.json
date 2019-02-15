@@ -9,6 +9,8 @@
     "export": "next export -o dist"
   },
   "dependencies": {
+    "@mapbox/rehype-prism": "^0.3.1",
+    "@mdx-js/mdx": "^0.17.3",
     "@zeit/next-mdx": "^1.2.0",
     "babel-plugin-preval": "^3.0.1",
     "babel-plugin-styled-components": "^1.10.0",

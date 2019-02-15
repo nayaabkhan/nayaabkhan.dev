@@ -1,10 +1,12 @@
 const images = require('remark-images')
 const emoji = require('remark-emoji')
 const slug = require('remark-slug')
+const rehypePrism = require('@mapbox/rehype-prism')
 const withMDX = require('@zeit/next-mdx')({
   extension: /.mdx?$/,
   options: {
-    mdPlugins: [images, emoji, slug]
+    mdPlugins: [images, emoji, slug],
+    hastPlugins: [rehypePrism]
   }
 })
 

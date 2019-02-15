@@ -32,6 +32,10 @@ export default class MyDocument extends Document {
     return (
       <html lang={site.languageCode}>
         <Head>
+          <link
+            href="https://fonts.googleapis.com/css?family=Overpass+Mono|PT+Mono"
+            rel="stylesheet"
+          />
           <meta charSet="utf-8" />
         </Head>
         <body>
