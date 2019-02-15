@@ -1,5 +1,27 @@
 ## About
 
+export const meta = {
+  title: 'About',
+  tags: ['Next.js', 'MDX'],
+  layout: 'page',
+  publishDate: '2011-01-01',
+  modifiedDate: false,
+  seoDescription: 'This is an about page.'
+}
+
 My name is khan. :wink:
+
+```js
+import PageLink from './page-link'
+
+const Header = () => (
+  <header>
+    <PageLink href="/">Home</PageLink>
+    <PageLink href="/about">About</PageLink>
+  </header>
+)
+
+export default Header
+```
 
 https://c8r-x0.s3.amazonaws.com/lab-components-macbook.jpg

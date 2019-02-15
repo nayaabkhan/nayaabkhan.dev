@@ -1,11 +1,16 @@
 import Header from './header'
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
+  margin: auto;
+  max-width: 600px;
+`
 
 const Layout = ({ children }) => (
-  <div>
+  <Wrapper>
     <Header />
-    <h1>Welcome</h1>
     {children}
-  </div>
+  </Wrapper>
 )
 
 export default Layout
