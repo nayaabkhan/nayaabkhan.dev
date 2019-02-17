@@ -4,8 +4,8 @@ import site from '../site.toml'
 const postFileNames = () => {
   const postFileNames =
     preval`module.exports = require("fs").readdirSync("./pages/blog")` || []
-  const filteredFileNames = postFileNames.filter(
-    name => name.match(/.(mdx|js)$/)
+  const filteredFileNames = postFileNames.filter(name =>
+    name.match(/.(mdx|js)$/)
   )
   return Promise.resolve(filteredFileNames)
 }
@@ -61,7 +61,7 @@ const createPostList = fileNameList => {
       name: cleaned_name,
       type: 'post',
       secondsSinceEpoch,
-      ...moreMeta // any extra properties a post may have
+      ...moreMeta, // any extra properties a post may have
     })
 
     return collection
