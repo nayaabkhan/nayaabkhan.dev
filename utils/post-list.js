@@ -4,7 +4,10 @@ import site from '../site.toml'
 const postFileNames = () => {
   const postFileNames =
     preval`module.exports = require("fs").readdirSync("./pages/blog")` || []
-  return Promise.resolve(postFileNames)
+  const filteredFileNames = postFileNames.filter(
+    name => name.match(/.(mdx|js)$/)
+  )
+  return Promise.resolve(filteredFileNames)
 }
 
 const createPostList = fileNameList => {
