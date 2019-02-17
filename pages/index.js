@@ -4,4 +4,6 @@ const Message = styled.div`
   color: rebeccapurple;
 `
 
-export default () => <Message>Welcome to next.js!</Message>
+const IndexPage = () => <Message>Welcome to next.js!</Message>
+
+export default IndexPage
