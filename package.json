@@ -8,7 +8,8 @@
     "start": "NODE_ENV=production next start",
     "export": "NODE_ENV=production next export -o dist",
     "format": "prettier --write 'pages/**/*.js'",
-    "lint": "eslint pages"
+    "lint": "eslint pages",
+    "deploy": "now && now alias"
   },
   "dependencies": {
     "next": "^8.0.1",
