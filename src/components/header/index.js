@@ -60,10 +60,8 @@ const Header = () => (
         position: relative;
         list-style: none;
         text-align: center;
-      }
 
-      @media screen and (min-width: 767px) {
-        ul {
+        @media screen and (min-width: 767px) {
           text-align: right;
         }
       }
@@ -77,10 +75,8 @@ const Header = () => (
       li:first-child {
         width: 100%;
         margin-bottom: ${spacings.small};
-      }
 
-      @media screen and (min-width: 767px) {
-        li:first-child {
+        @media screen and (min-width: 767px) {
           position: absolute;
           left: 0;
           width: auto;
@@ -95,10 +91,10 @@ const Header = () => (
       a {
         display: block;
         color: inherit;
-      }
 
-      a:hover {
-        color: ${colors.primary};
+        &:hover {
+          color: ${colors.primary};
+        }
       }
 
       h1 {

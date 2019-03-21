@@ -25,10 +25,10 @@ const reset = css.global`
   a {
     color: inherit;
     text-decoration: none;
-  }
 
-  a:hover {
-    text-decoration: underline dotted;
+    &:hover {
+      text-decoration: underline dotted;
+    }
   }
 
   h1, h2, h3, h4, h5 {

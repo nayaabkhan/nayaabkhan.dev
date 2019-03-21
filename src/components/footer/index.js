@@ -49,46 +49,44 @@ const Footer = () => (
       li {
         position: relative;
         display: inline-block;
-      }
 
-      li:first-child {
-        width: 100%;
-      }
+        &:first-child {
+          width: 100%;
 
-      @media screen and (min-width: 767px) {
-        li:first-child {
-          margin-right: ${spacings.normal};
-          width: auto;
+          @media screen and (min-width: 767px) {
+            margin-right: ${spacings.normal};
+            width: auto;
+          }
         }
       }
 
       li:not(:first-child) {
         margin-right: ${spacings.normal};
-      }
 
-      li:not(:first-child)::after {
-        content: '・';
-        position: absolute;
-        bottom: 0;
-        right: -${spacings.normal};
-        color: ${colors.muted};
+        &::after {
+          content: '・';
+          position: absolute;
+          bottom: 0;
+          right: -${spacings.normal};
+          color: ${colors.muted};
+        }
       }
 
       li:last-child {
         margin-right: 0;
-      }
 
-      li:last-child::after {
-        content: '';
+        &::after {
+          content: '';
+        }
       }
 
       a {
         display: block;
         color: ${colors.muted};
-      }
 
-      a:hover {
-        color: ${colors.primary};
+        &:hover {
+          color: ${colors.primary};
+        }
       }
     `}</style>
   </>
