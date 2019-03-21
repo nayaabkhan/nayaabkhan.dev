@@ -4,6 +4,9 @@
       "next/babel",
       {
         "styled-jsx": {
+          "optimizeForSpeed": true,
+          "vendorPrefixes": false,
+          "sourceMaps": true,
           "plugins": ["styled-jsx-plugin-postcss"]
         }
       }
