@@ -1,4 +1,3 @@
-import css from 'styled-jsx/css'
 import Wrapper from '../src/components/wrapper'
 
 import * as spacings from '../src/theme/spacings'
@@ -55,10 +54,8 @@ const IndexPage = () => (
         padding: ${spacings.normal};
         border: 1px solid ${colors.accent};
         font-size: 2.5rem;
-      }
 
-      @media screen and (min-width: 767px) {
-        h1 {
+        @media screen and (min-width: 767px) {
           font-size: 3rem;
         }
       }
