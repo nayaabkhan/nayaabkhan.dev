@@ -11,6 +11,7 @@
     "export": "NODE_ENV=production next export -o dist",
     "format": "prettier --write '{pages,src}/**/*.js'",
     "lint": "eslint pages src",
+    "chromatic": "CHROMATIC_APP_CODE=u93kzxsqcvs chromatic test",
     "deploy": "now && now alias"
   },
   "dependencies": {
@@ -34,6 +35,7 @@
     "eslint-plugin-react": "^7.12.4",
     "postcss-nested": "^4.1.2",
     "prettier": "^1.16.4",
+    "storybook-chromatic": "^1.3.1",
     "styled-jsx-plugin-postcss": "^2.0.0"
   },
   "browserslist": [
