@@ -9,6 +9,9 @@ export const task = {
 }
 
 storiesOf('Roadmap/Task', module)
+  .addParameters({
+    chromatic: { viewports: [375, 768] },
+  })
   .addDecorator(story => (
     <div style={{ padding: '3rem' }}>
       <TaskList>{story()}</TaskList>
