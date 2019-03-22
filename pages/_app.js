@@ -18,18 +18,6 @@ export default class MyApp extends App {
     return (
       <>
         <Head>
-          <meta charSet="utf-8" />
-          <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
-
-          <link
-            href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700"
-            rel="stylesheet"
-          />
-
           <title>{`${siteTitle}${title ? ` ・ ${title}` : ''}`}</title>
         </Head>
 

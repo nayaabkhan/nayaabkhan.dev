@@ -1,5 +1,7 @@
 import css from 'styled-jsx/css'
+
 import * as colors from '../theme/colors'
+import * as typography from '../theme/typography'
 
 const reset = css.global`
   * {
@@ -18,7 +20,7 @@ const reset = css.global`
     background-size: 100px 100px;
     background-blend-mode: multiply;
 
-    font-family: 'Old Standard TT', Georgia, 'Times New Roman', Times, serif;
+    font-family: ${typography.oldStandardTT};
     font-size: 16px;
   }
 
@@ -37,7 +39,7 @@ const reset = css.global`
   }
 
   h1 {
-    font-family: 'Harman Retro Inline';
+    font-family: ${typography.harmanRetroInline};
     font-size: 3em;
     letter-spacing: -0.05em;
   }

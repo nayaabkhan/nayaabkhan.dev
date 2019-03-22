@@ -2,8 +2,11 @@ import PropTypes from 'prop-types'
 import Link from 'next/link'
 
 import Wrapper from '../wrapper'
+
 import * as spacings from '../../theme/spacings'
 import * as colors from '../../theme/colors'
+import * as typography from '../../theme/typography'
+
 import { title } from '../../../site'
 
 const LinkWithPrefetch = ({ children, ...rest }) => (
@@ -99,7 +102,7 @@ const Header = () => (
 
       h1 {
         margin: 0;
-        font-family: 'Harman Retro';
+        font-family: ${typography.harmanRetro};
         font-size: inherit;
         color: ${colors.primary};
       }
