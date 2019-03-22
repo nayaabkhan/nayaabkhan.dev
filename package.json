@@ -4,6 +4,8 @@
   "license": "MIT",
   "scripts": {
     "develop": "next",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "build": "NODE_ENV=production next build",
     "start": "NODE_ENV=production next start",
     "export": "NODE_ENV=production next export -o dist",
@@ -19,7 +21,13 @@
     "react-dom": "^16.8.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@storybook/addon-actions": "^5.0.3",
+    "@storybook/addon-links": "^5.0.3",
+    "@storybook/addons": "^5.0.3",
+    "@storybook/react": "^5.0.3",
     "autoprefixer": "^9.5.0",
+    "babel-loader": "^8.0.5",
     "eslint": "^5.14.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-prettier": "^3.0.1",

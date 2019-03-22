@@ -4,7 +4,7 @@ import * as colors from '../theme/colors'
 import * as typography from '../theme/typography'
 
 const reset = css.global`
-  * {
+  *, *::before, *::after {
     box-sizing: border-box;
   }
 
