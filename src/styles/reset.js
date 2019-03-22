@@ -35,13 +35,34 @@ const reset = css.global`
 
   h1, h2, h3, h4, h5 {
     line-height: 1.2;
-    color: ${colors.primary};
+    color: ${colors.muted};
+    font-family: ${typography.harmanRetro};
   }
 
   h1 {
     font-family: ${typography.harmanRetroInline};
-    font-size: 3em;
+    font-size: 2.5em;
     letter-spacing: -0.05em;
+
+    @media screen and (min-width: 767px) {
+      font-size: 3rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+
+    @media screen and (min-width: 767px) {
+      font-size: 2rem;
+    }
+  }
+
+  h3 {
+    font-size: 1rem;
+
+    @media screen and (min-width: 767px) {
+      font-size: 1.5rem;
+    }
   }
 
   pre,

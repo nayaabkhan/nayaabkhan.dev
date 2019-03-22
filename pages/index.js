@@ -1,4 +1,6 @@
 import Wrapper from '../src/components/wrapper'
+import TaskList from '../src/components/roadmap/task-list'
+import Task from '../src/components/roadmap/task'
 
 import * as spacings from '../src/theme/spacings'
 import * as colors from '../src/theme/colors'
@@ -25,6 +27,29 @@ const introPseudoElement = `
   color: ${colors.muted};
 `
 
+const tasks = [
+  {
+    title: 'Basic homepage',
+    status: 'DONE',
+    priority: 'HIGH',
+  },
+  {
+    title: 'Add roadmap',
+    status: 'DONE',
+    priority: 'HIGH',
+  },
+  {
+    title: 'Setup a Blog',
+  },
+  {
+    title: 'Setup the portfolio',
+  },
+  {
+    title: 'Write About me',
+    priority: 'HIGH',
+  },
+]
+
 const IndexPage = () => (
   <>
     <Wrapper>
@@ -39,6 +64,16 @@ const IndexPage = () => (
           <strong>design</strong>.
         </p>
       </section>
+
+      <section>
+        <h2>Roadmap</h2>
+
+        <TaskList>
+          {tasks.map(task => (
+            <Task key={task.title} {...task} />
+          ))}
+        </TaskList>
+      </section>
     </Wrapper>
 
     <style jsx>{`
@@ -46,8 +81,12 @@ const IndexPage = () => (
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: ${spacings.xxLarge} 0;
+        margin: ${spacings.large} 0;
         text-align: center;
+      }
+
+      section:first-child {
+        margin-top: ${spacings.xxLarge};
       }
 
       h1 {
@@ -55,11 +94,6 @@ const IndexPage = () => (
         margin: 0 0 ${spacings.large};
         padding: ${spacings.normal};
         border: 1px solid ${colors.accent};
-        font-size: 2.5rem;
-
-        @media screen and (min-width: 767px) {
-          font-size: 3rem;
-        }
       }
 
       h1::before {
