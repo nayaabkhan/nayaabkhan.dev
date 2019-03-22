@@ -2,6 +2,7 @@ import Wrapper from '../src/components/wrapper'
 
 import * as spacings from '../src/theme/spacings'
 import * as colors from '../src/theme/colors'
+import * as typography from '../src/theme/typography'
 
 const introPseudoElement = `
   position: absolute;
@@ -11,7 +12,8 @@ const introPseudoElement = `
 
   padding: 0 ${spacings.small};
 
-  font-family: 'Harman Simple';
+  font-family: ${typography.harmanSimple};
+  font-weight: normal;
   font-size: 1rem;
 
   white-space: nowrap;
