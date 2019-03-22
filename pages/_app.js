@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Layout from '../src/components/layout'
 
 import normalize from 'normalize.css'
-import fonts from '../src/styles/fonts.css'
+import fonts from '../src/styles/fonts'
 import reset from '../src/styles/reset'
 
 import { title as siteTitle } from '../site'

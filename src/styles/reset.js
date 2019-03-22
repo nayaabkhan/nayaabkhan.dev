@@ -4,6 +4,8 @@ import * as colors from '../theme/colors'
 import * as typography from '../theme/typography'
 
 const reset = css.global`
+  @import 'responsive.css';
+
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -44,7 +46,7 @@ const reset = css.global`
     font-size: 2.5em;
     letter-spacing: -0.05em;
 
-    @media screen and (min-width: 767px) {
+    @media (--viewport-medium) {
       font-size: 3rem;
     }
   }
@@ -52,7 +54,7 @@ const reset = css.global`
   h2 {
     font-size: 1.5rem;
 
-    @media screen and (min-width: 767px) {
+    @media (--viewport-medium) {
       font-size: 2rem;
     }
   }
@@ -60,7 +62,7 @@ const reset = css.global`
   h3 {
     font-size: 1rem;
 
-    @media screen and (min-width: 767px) {
+    @media (--viewport-medium) {
       font-size: 1.5rem;
     }
   }

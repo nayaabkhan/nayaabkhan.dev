@@ -37,6 +37,8 @@ const Task = ({ title, status, progress, priority }) => (
     </tr>
 
     <style jsx>{`
+      @import 'responsive.css';
+
       tr {
         border-bottom: 1px solid ${colors.accent};
 
@@ -52,7 +54,7 @@ const Task = ({ title, status, progress, priority }) => (
           padding-right: 0;
         }
 
-        @media screen and (min-width: 767px) {
+        @media (--viewport-medium) {
           padding: ${spacings.normal};
         }
       }
@@ -98,6 +100,7 @@ const Task = ({ title, status, progress, priority }) => (
 
       progress {
         width: 100%;
+        vertical-align: middle;
       }
 
       .priority {
