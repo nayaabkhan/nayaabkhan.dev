@@ -53,6 +53,8 @@ const Header = () => (
     </header>
 
     <style jsx>{`
+      @import 'responsive.css';
+
       header {
         margin: ${spacings.large} 0;
       }
@@ -64,7 +66,7 @@ const Header = () => (
         list-style: none;
         text-align: center;
 
-        @media screen and (min-width: 767px) {
+        @media (--viewport-medium) {
           text-align: right;
         }
       }
@@ -79,7 +81,7 @@ const Header = () => (
         width: 100%;
         margin-bottom: ${spacings.small};
 
-        @media screen and (min-width: 767px) {
+        @media (--viewport-medium) {
           position: absolute;
           left: 0;
           width: auto;

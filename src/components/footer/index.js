@@ -33,6 +33,8 @@ const Footer = () => (
     </footer>
 
     <style jsx>{`
+      @import 'responsive.css';
+
       footer {
         margin: ${spacings.large} 0;
         font-size: 0.9em;
@@ -53,7 +55,7 @@ const Footer = () => (
         &:first-child {
           width: 100%;
 
-          @media screen and (min-width: 767px) {
+          @media (--viewport-medium) {
             margin-right: ${spacings.normal};
             width: auto;
           }
