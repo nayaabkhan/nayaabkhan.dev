@@ -14,9 +14,9 @@ const priorityLabels = {
 }
 
 const priorityColors = {
-  LOW: 'hsl(30, 100%, 60%)',
-  MEDIUM: 'hsl(15, 100%, 60%)',
-  HIGH: 'hsl(0, 80%, 50%)',
+  LOW: 'hsl(0, 0%, 44%)',
+  MEDIUM: 'hsl(26, 100%, 38%)',
+  HIGH: 'hsl(0, 80%, 44%)',
 }
 
 const Task = ({ title, status, progress, priority }) => (
