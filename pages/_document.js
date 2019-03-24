@@ -12,6 +12,11 @@ export default class MyDocument extends Document {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
 
+          <meta
+            name="google-site-verification"
+            content="04CqAJZUXsf6XyAoyl-jsWHKI0BtpyMKnj_2Ck44pcw"
+          />
+
           {/* Code snippet to speed up Google Fonts rendering: googlefonts.3perf.com */}
           <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
           <link
