@@ -40,6 +40,7 @@ const tasks = [
   },
   {
     title: 'Setup a Blog',
+    status: 'DONE',
   },
   {
     title: 'Setup the portfolio',
@@ -48,6 +49,7 @@ const tasks = [
     title: 'Write About me',
     priority: 'HIGH',
   },
+  { title: 'Add RSS feed' },
 ]
 
 const IndexPage = () => (

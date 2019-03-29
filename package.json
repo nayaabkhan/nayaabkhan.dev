@@ -19,7 +19,8 @@
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-syntax-highlighter": "^10.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
@@ -27,6 +28,7 @@
     "@storybook/addon-links": "^5.0.3",
     "@storybook/addons": "^5.0.3",
     "@storybook/react": "^5.0.3",
+    "@zeit/next-mdx": "^1.2.0",
     "autoprefixer": "^9.5.0",
     "babel-loader": "^8.0.5",
     "eslint": "^5.14.0",
@@ -34,6 +36,11 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
+    "imagemin-gifsicle": "^6.0.1",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-optipng": "^6.0.0",
+    "imagemin-svgo": "^7.0.0",
+    "next-optimized-images": "^2.4.0",
     "postcss-custom-media": "^7.0.7",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.1.2",
