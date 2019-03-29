@@ -12,6 +12,7 @@ const reset = css.global`
 
   html {
     line-height: 1.6;
+    font-size: 16px;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -23,7 +24,6 @@ const reset = css.global`
     background-blend-mode: multiply;
 
     font-family: ${typography.oldStandardTT};
-    font-size: 16px;
   }
 
   a {
@@ -39,6 +39,7 @@ const reset = css.global`
     line-height: 1.2;
     color: ${colors.muted};
     font-family: ${typography.harmanRetro};
+    text-align: center;
   }
 
   h1 {

@@ -1,4 +1,5 @@
 export const background = 'hsl(36, 25%, 94%)'
+export const shadow = 'hsl(36, 30%, 85%)'
 export const text = 'hsl(251, 84%, 5%)'
 
 export const primary = 'hsl(251, 73%, 13%)'
