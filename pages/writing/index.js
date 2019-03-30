@@ -5,13 +5,7 @@ import * as spacings from '../../src/theme/spacings'
 import * as typography from '../../src/theme/typography'
 import * as colors from '../../src/theme/colors'
 
-import listing from '../../_listing'
-
-function dateSortDesc(a, b) {
-  if (a.date > b.date) return -1
-  if (a.date < b.date) return 1
-  return 0
-}
+import posts from '../../engine/posts'
 
 const Writing = () => (
   <>
@@ -22,26 +16,28 @@ const Writing = () => (
         <p>On JavaScript, CSS, React etc.</p>
 
         <ul>
-          {listing.sort(dateSortDesc).map(page => (
-            <Link href={page.href} key={page.title}>
-              <a>
-                <li>
-                  <article>
-                    <header>
-                      <img
-                        src={`/static/images/hero/${page.slug}.svg`}
-                        alt="Illustration of the article"
-                      />
-                      <h4>{page.title}</h4>
-                    </header>
-                    <footer>
-                      <time>{page.date.toLocaleDateString()}</time>
-                    </footer>
-                  </article>
-                </li>
-              </a>
-            </Link>
-          ))}
+          {posts
+            .filter(p => p.date)
+            .map(page => (
+              <Link href={page.href} key={page.title}>
+                <a>
+                  <li>
+                    <article>
+                      <header>
+                        <img
+                          src={`/static/images/hero/${page.slug}.svg`}
+                          alt="Illustration of the article"
+                        />
+                        <h4>{page.title}</h4>
+                      </header>
+                      <footer>
+                        <time>{new Date(page.date).toLocaleDateString()}</time>
+                      </footer>
+                    </article>
+                  </li>
+                </a>
+              </Link>
+            ))}
         </ul>
       </section>
     </Wrapper>
@@ -87,6 +83,10 @@ const Writing = () => (
     `}</style>
   </>
 )
+
+export const meta = {
+  title: 'Blog',
+}
 
 Writing.title = 'Writing'
 
