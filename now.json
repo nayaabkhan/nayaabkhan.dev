@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "nayaabkhan.me",
+  "name": "nayaabkhan.dev",
   "builds": [{ "src": "next.config.js", "use": "@now/next" }],
-  "alias": ["nayaabkhan.me", "www.nayaabkhan.me"]
+  "alias": ["nayaabkhan.dev", "www.nayaabkhan.dev"]
 }
