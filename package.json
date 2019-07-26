@@ -1,7 +1,10 @@
 {
-  "name": "nayaabkhan.me",
+  "name": "nayaabkhan.dev",
   "version": "1.0.0",
+  "repository": "https://github.com/nayaabkhan/nayaabkhan.dev.git",
+  "author": "Nayaabkhan Khan <khannayaab@gmail.com>",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "develop": "next",
     "storybook": "start-storybook -p 6006 -s .",
